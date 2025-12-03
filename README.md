@@ -18,6 +18,7 @@ A modern, responsive portfolio website showcasing my work as a UI/UX Full Stack 
 - **Tailwind CSS v4** - Styling
 - **Vite** - Build tool and dev server
 - **EmailJS** - Contact form email service
+- **Heroicons** - Icons
 
 ## 📦 Installation
 
@@ -40,28 +41,6 @@ npm run dev
 4. Open your browser and navigate to `http://localhost:5173`
 
 ## 🔧 Configuration
-
-### EmailJS Setup (Optional)
-
-To enable the contact form to send emails:
-
-1. Sign up for a free account at [EmailJS](https://www.emailjs.com/)
-2. Create an email service (Gmail recommended)
-3. Create an email template with these variables:
-   - `{{from_name}}`
-   - `{{from_email}}`
-   - `{{subject}}`
-   - `{{message}}`
-4. Set the template's "To Email" to: `sithomolamusiki@gmail.com`
-5. Create a `.env` file in the root directory:
-```env
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
-```
-6. Restart the dev server
-
-See `README_EMAILJS_SETUP.md` for detailed setup instructions.
 
 ## 📁 Project Structure
 
