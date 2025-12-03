@@ -1,6 +1,5 @@
 import { ThemeProvider } from './contexts/ThemeContext';
 import { Navigation } from './components/Navigation';
-import { ThemeToggle } from './components/ThemeToggle';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Experience } from './components/Experience';
@@ -14,7 +13,6 @@ function App() {
     <ThemeProvider>
       <div className="min-h-screen bg-[#ffffff] dark:bg-[#2a2a2a] transition-colors duration-300">
         <Navigation />
-        <ThemeToggle />
         <Hero />
         <About />
         <Experience />
