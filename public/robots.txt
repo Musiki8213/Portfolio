@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemap location (update with your actual URL)
+Sitemap: https://portfolio-sepia-eight-34.vercel.app//sitemap.xml
+

@@ -18,7 +18,11 @@ A modern, responsive portfolio website showcasing my work as a UI/UX Full Stack 
 - **Tailwind CSS v4** - Styling
 - **Vite** - Build tool and dev server
 - **EmailJS** - Contact form email service
+<<<<<<< HEAD
 - **Heroicons** - Icons
+=======
+- **Heroicons** - SVG icons (inline)
+>>>>>>> af46eef (Add SEO meta tags and Google verification)
 
 ## 📦 Installation
 
@@ -75,6 +79,10 @@ portfolio/
 - **Purple** (`#8b5cf6`): Accent color for Education and Projects sections
 - **Light Mode**: White backgrounds with black text
 - **Dark Mode**: Dark gray backgrounds with light text
+
+## 🎯 Icons
+
+All icons are from **Heroicons** (https://heroicons.com/), used as inline SVG elements. Heroicons is an open-source icon library by the makers of Tailwind CSS, providing beautiful SVG icons that work perfectly with Tailwind's styling system.
 
 ## 📝 Available Scripts
 
