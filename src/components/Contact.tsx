@@ -189,7 +189,7 @@ export const Contact = () => {
                 </svg>
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/Musiki8213"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-4 bg-[#3b82f6] dark:bg-[#3b82f6] text-[#ffffff] rounded-lg hover:bg-[#2563eb] dark:hover:bg-[#2563eb] transition-all duration-300 transform hover:scale-110 hover:shadow-lg shadow-md"

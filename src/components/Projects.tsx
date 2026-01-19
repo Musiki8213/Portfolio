@@ -22,13 +22,22 @@ export const Projects = () => {
         'A React + TypeScript app to store, manage, and view links with a sleek, responsive interface. Features user authentication, add/edit/delete/search/filter links, with responsive design and dark/light theme.',
       technologies: ['React', 'TypeScript', 'React Router', 'CSS'],
       image: '/project-weather-app.png',
+      link: 'https://react-ts-task-2-links-vault.vercel.app/',
     },
     {
-      title: 'SafeMzansi — Community Safety App',
+      title: 'Weather Dashboard',
       description:
-        'A React + Express app to keep communities informed and safe, with web and mobile support via Capacitor. Features user-friendly React frontend, Express backend with JWT authentication, mobile-ready with Capacitor, and real-time updates.',
-      technologies: ['React', 'Express.js', 'MongoDB', 'Firebase', 'Capacitor'],
-      image: '/project-safemzansi.png',
+        'A responsive Progressive Web App that fetches and displays real-time weather (or news) data. It supports offline functionality by caching the last successful API response in localStorage, notifies users when offline, and includes installable PWA features for a seamless web experience.',
+      technologies: [
+        'HTML5',
+        'CSS3',
+        'JavaScript (ES6+)',
+        'OpenWeatherMap API',
+        'Service Worker',
+        'PWA',
+      ],
+      image: '/weather-dash.jpg',
+      link: 'https://weather-dashboard-sepia-seven.vercel.app/',
     },
     {
       title: 'Weather App',
@@ -36,6 +45,7 @@ export const Projects = () => {
         'A React + TypeScript web application that shows current weather and forecasts for any location. Features search by city, displays temperature/humidity/wind, responsive design, and dynamic UI with weather-based icons.',
       technologies: ['React', 'TypeScript', 'CSS', 'OpenWeatherMap API'],
       image: '/project-link-vault.png',
+      link: 'https://task4-weather-app.vercel.app/',
     },
     {
       title: 'ShopMate — Shopping List App',
@@ -43,6 +53,7 @@ export const Projects = () => {
         'A responsive Shopping List App built with React + TypeScript, Redux Toolkit, Tailwind CSS, and JSON Server. Features user registration/login, create/edit/delete/search/sort lists, persistent data, and responsive design.',
       technologies: ['React', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS'],
       image: '/project-shopmate.png',
+      link: 'https://task-5-shopping-list-app-one.vercel.app/',
     },
   ];
 
@@ -75,78 +86,87 @@ export const Projects = () => {
               <svg key="shop" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
             ];
             return (
-              <div
+              <a
                 key={index}
-                className={`bg-[#ffffff] dark:bg-[#2a2a2a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border-2 border-transparent hover:border-[#3b82f6] dark:hover:border-[#60a5fa] hover:scale-[1.02] overflow-hidden ${
-                  isVisible ? 'animate-fade-in-up' : 'opacity-0'
-                }`}
-                style={{ animationDelay: `${index * 0.1}s` }}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                {/* Project Preview Image */}
-                <div className="relative w-full h-48 bg-gradient-to-br from-[#3b82f6] to-[#60a5fa] overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={`${project.title} preview`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      // Fallback to gradient if image doesn't exist
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  <div className="absolute top-4 left-4">
-                    <div className="w-12 h-12 rounded-lg bg-[#3b82f6] dark:bg-[#60a5fa] flex items-center justify-center group-hover:scale-110 transition-all duration-300 text-[#ffffff] shadow-lg">
-                      {projectIcons[index] || projectIcons[0]}
+                <div
+                  className={`bg-[#ffffff] dark:bg-[#2a2a2a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border-2 border-transparent hover:border-[#3b82f6] dark:hover:border-[#60a5fa] hover:scale-[1.02] overflow-hidden ${
+                    isVisible ? 'animate-fade-in-up' : 'opacity-0'
+                  }`}
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {/* Project Preview Image */}
+                  <div className="relative w-full h-48 bg-gradient-to-br from-[#3b82f6] to-[#60a5fa] overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={`${project.title} preview`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    <div className="absolute top-4 left-4">
+                      <div className="w-12 h-12 rounded-lg bg-[#3b82f6] dark:bg-[#60a5fa] flex items-center justify-center group-hover:scale-110 transition-all duration-300 text-[#ffffff] shadow-lg">
+                        {projectIcons[index] || projectIcons[0]}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-6">
+                    <h3 className="text-2xl font-semibold text-[#000000] dark:text-[#aaaaaa] group-hover:text-[#000000] dark:group-hover:text-[#e5e5e5] transition-colors mb-4">
+                      {project.title}
+                    </h3>
+                    <div className="mb-4">
+                      <p
+                        className={`text-[#333333] dark:text-[#cccccc] leading-relaxed ${
+                          expandedProjects.has(index) ? '' : 'line-clamp-2'
+                        }`}
+                      >
+                        {project.description}
+                      </p>
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault(); 
+                          toggleExpand(index);
+                        }}
+                        className="mt-2 text-[#3b82f6] dark:text-[#60a5fa] hover:text-[#2563eb] dark:hover:text-[#3b82f6] text-sm font-medium flex items-center gap-1 transition-colors"
+                      >
+                        {expandedProjects.has(index) ? (
+                          <>
+                            <span>Show less</span>
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                            </svg>
+                          </>
+                        ) : (
+                          <>
+                            <span>Read more</span>
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </>
+                        )}
+                      </button>
+                    </div>
+                    <div className="flex flex-nowrap gap-2 overflow-x-auto pb-2 scrollbar-hide">
+                      {project.technologies.map((tech, i) => (
+                        <span
+                          key={i}
+                          className="px-3 py-1 bg-[#3b82f6] dark:bg-[#60a5fa] text-[#ffffff] rounded text-xs font-medium hover:scale-105 hover:shadow-sm transition-all duration-300 cursor-default whitespace-nowrap flex-shrink-0"
+                        >
+                          {tech}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
-                
-                <div className="p-6">
-                  <h3 className="text-2xl font-semibold text-[#000000] dark:text-[#aaaaaa] group-hover:text-[#000000] dark:group-hover:text-[#e5e5e5] transition-colors mb-4">
-                    {project.title}
-                  </h3>
-                  <div className="mb-4">
-                    <p
-                      className={`text-[#333333] dark:text-[#cccccc] leading-relaxed ${
-                        expandedProjects.has(index) ? '' : 'line-clamp-2'
-                      }`}
-                    >
-                      {project.description}
-                    </p>
-                    <button
-                      onClick={() => toggleExpand(index)}
-                      className="mt-2 text-[#3b82f6] dark:text-[#60a5fa] hover:text-[#2563eb] dark:hover:text-[#3b82f6] text-sm font-medium flex items-center gap-1 transition-colors"
-                    >
-                      {expandedProjects.has(index) ? (
-                        <>
-                          <span>Show less</span>
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                          </svg>
-                        </>
-                      ) : (
-                        <>
-                          <span>Read more</span>
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                          </svg>
-                        </>
-                      )}
-                    </button>
-                  </div>
-                  <div className="flex flex-nowrap gap-2 overflow-x-auto pb-2 scrollbar-hide">
-                    {project.technologies.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="px-3 py-1 bg-[#3b82f6] dark:bg-[#60a5fa] text-[#ffffff] rounded text-xs font-medium hover:scale-105 hover:shadow-sm transition-all duration-300 cursor-default whitespace-nowrap flex-shrink-0"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              </a>
             );
           })}
         </div>
