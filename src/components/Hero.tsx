@@ -87,7 +87,7 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-[#3b82f6] to-[#60a5fa] rounded-2xl transform rotate-3 opacity-20 dark:opacity-10 blur-xl animate-pulse-slow"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300 animate-scale-in" style={{ animationDelay: '0.3s', opacity: 0 }}>
                 <img
-                  src={theme === 'dark' ? '/3.jpg' : '/1.jpg'}
+                  src={theme === 'dark' ? '/darkmode.jpg' : '/lightmode.jpg'}
                   alt="Musiki Sithomola - UI/UX Full Stack Developer"
                   className="w-full h-auto object-cover"
                 />

@@ -56,7 +56,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection('home')}
-            className="hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity cursor-pointer"
           >
             <Logo size="sm" variant="initials" />
           </button>
@@ -68,7 +68,7 @@ export const Navigation = () => {
                   {item.id === 'contact' ? (
                     <button
                       onClick={() => scrollToSection(item.id)}
-                      className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 ${
+                      className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 cursor-pointer ${
                         activeSection === item.id
                           ? 'bg-[#3b82f6] dark:bg-[#3b82f6] text-[#ffffff] shadow-lg'
                           : 'bg-[#3b82f6] dark:bg-[#3b82f6] text-[#ffffff] hover:bg-[#2563eb] dark:hover:bg-[#2563eb] shadow-md hover:shadow-lg hover:scale-[1.02]'
@@ -79,7 +79,7 @@ export const Navigation = () => {
                   ) : (
                     <button
                       onClick={() => scrollToSection(item.id)}
-                      className={`px-3 py-2 text-sm font-medium transition-colors duration-300 ${
+                      className={`px-3 py-2 text-sm font-medium transition-colors duration-300 cursor-pointer ${
                         activeSection === item.id
                           ? 'text-[#3b82f6] dark:text-[#60a5fa] border-b-2 border-[#3b82f6] dark:border-[#60a5fa] font-semibold'
                           : 'text-[#000000] dark:text-[#cccccc] hover:text-[#3b82f6] dark:hover:text-[#60a5fa] transition-colors duration-300'
@@ -94,7 +94,7 @@ export const Navigation = () => {
             
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full bg-[#3b82f6] dark:bg-[#3b82f6] text-[#ffffff] hover:bg-[#2563eb] dark:hover:bg-[#2563eb] transition-all duration-300 shadow-lg hover:shadow-md hover:scale-105"
+              className="p-2 rounded-full bg-[#3b82f6] dark:bg-[#3b82f6] text-[#ffffff] hover:bg-[#2563eb] dark:hover:bg-[#2563eb] transition-all duration-300 shadow-lg hover:shadow-md hover:scale-105 cursor-pointer"
               aria-label="Toggle theme"
             >
               {theme === 'light' ? (
