@@ -1,6 +1,8 @@
 import { Logo } from './Logo';
+import { useTheme } from '../contexts/ThemeContext';
 
 export const Hero = () => {
+  const { theme } = useTheme();
   const handleDownloadCV = async (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     try {
@@ -85,7 +87,7 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-[#3b82f6] to-[#60a5fa] rounded-2xl transform rotate-3 opacity-20 dark:opacity-10 blur-xl animate-pulse-slow"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300 animate-scale-in" style={{ animationDelay: '0.3s', opacity: 0 }}>
                 <img
-                  src="/Gemini_Generated_Image_yqcy1kyqcy1kyqcy.png"
+                  src={theme === 'dark' ? '/3.jpg' : '/1.jpg'}
                   alt="Musiki Sithomola - UI/UX Full Stack Developer"
                   className="w-full h-auto object-cover"
                 />
