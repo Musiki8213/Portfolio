@@ -40,7 +40,7 @@ const AnimatedLetters = ({
 );
 
 export const Hero = () => {
-  const cvFilePath = '/Sithomola%20Musiki%20CV.pdf';
+  const cvFilePath = '/Musiki_Sithomola_FlowCV_Resume_2026-05-18.pdf';
 
   const handleDownloadCV = async (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -50,7 +50,7 @@ export const Hero = () => {
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'Sithomola Musiki CV.pdf';
+      link.download = 'Musiki_Sithomola_FlowCV_Resume_2026-05-18.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
