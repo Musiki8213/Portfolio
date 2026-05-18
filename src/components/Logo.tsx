@@ -14,7 +14,7 @@ export const Logo = ({ className = '', size = 'md', variant = 'full' }: LogoProp
   if (variant === 'initials') {
     return (
       <div className={`font-bold ${sizeClasses[size]} ${className}`}>
-        <span className="bg-gradient-to-r from-[#3b82f6] via-[#60a5fa] to-[#3b82f6] bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+        <span className="bg-gradient-to-r from-[#000000] via-[#333333] to-[#000000] bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
           MS
         </span>
       </div>
@@ -24,10 +24,10 @@ export const Logo = ({ className = '', size = 'md', variant = 'full' }: LogoProp
   return (
     <div className={`font-bold ${sizeClasses[size]} ${className} leading-tight`}>
       <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2">
-        <span className="bg-gradient-to-r from-[#3b82f6] via-[#60a5fa] to-[#3b82f6] bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+        <span className="bg-gradient-to-r from-[#000000] via-[#333333] to-[#000000] bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
           Musiki
         </span>
-        <span className="text-[#000000] dark:text-[#e5e5e5] font-semibold">
+        <span className="text-[#000000] dark:text-[#ffffff] font-semibold">
           Sithomola
         </span>
       </div>
