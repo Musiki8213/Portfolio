@@ -178,16 +178,14 @@ export const Skills = () => {
     <section
       id="skills"
       ref={ref}
-      className={`py-20 bg-[#ffffff] dark:bg-[#2a2a2a] text-[#000000] dark:text-[#e5e5e5] relative overflow-hidden ${
+      className={`py-20 bg-[#ffffff] dark:bg-[#000000] text-[#000000] dark:text-[#ffffff] relative overflow-hidden ${
         isVisible ? 'animate-fade-in-up' : 'opacity-0'
       }`}
     >
-      {/* Subtle background decoration */}
-      <div className="absolute top-1/2 left-1/4 w-36 h-36 bg-[#3b82f6] dark:bg-[#3b82f6] rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-5 animate-pulse-slow"></div>
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
           <span className="inline-flex items-center gap-3">
-            <svg className="w-8 h-8 md:w-10 md:h-10 text-[#3b82f6] dark:text-[#60a5fa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-8 h-8 md:w-10 md:h-10 text-[#000000] dark:text-[#ffffff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
             Skills
@@ -204,10 +202,10 @@ export const Skills = () => {
             return (
               <div
                 key={index}
-                className="bg-[#ffffff] dark:bg-[#3a3a3a] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border-t-4 border-transparent hover:border-[#3b82f6] dark:hover:border-[#60a5fa]"
+                className="bg-[#ffffff] dark:bg-[#000000] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border-t-4 border-transparent hover:border-[#000000] dark:hover:border-[#ffffff] dark:border dark:border-[#ffffff]/20"
               >
-                <h3 className="text-2xl font-semibold mb-4 text-[#3b82f6] dark:text-[#60a5fa] flex items-center gap-2">
-                  <span className="text-[#3b82f6] dark:text-[#60a5fa] group-hover:scale-110 transition-all duration-300">
+                <h3 className="text-2xl font-semibold mb-4 text-[#000000] dark:text-[#ffffff] flex items-center gap-2">
+                  <span className="text-[#000000] dark:text-[#ffffff] group-hover:scale-110 transition-all duration-300">
                     {icons[index] || icons[0]}
                   </span>
                   {category.category}
@@ -216,7 +214,7 @@ export const Skills = () => {
                   {category.skills.map((skill, i) => (
                     <span
                       key={i}
-                      className="px-4 py-2 bg-[#3b82f6] dark:bg-[#3b82f6] text-[#ffffff] rounded text-sm font-medium hover:scale-105 hover:shadow-md transition-all duration-300 cursor-default flex items-center gap-2"
+                      className="px-4 py-2 border-2 border-[#000000]/15 dark:border-[#ffffff]/30 text-[#000000] dark:text-[#ffffff] rounded text-sm font-medium hover:scale-105 hover:border-[#000000]/40 dark:hover:border-[#ffffff] transition-all duration-300 cursor-default flex items-center gap-2"
                     >
                       <span className="flex-shrink-0">
                         {getSkillIcon(skill)}
