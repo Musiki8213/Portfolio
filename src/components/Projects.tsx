@@ -17,43 +17,40 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: 'Link Vault',
+      title: 'E-Commerce',
       description:
-        'A React + TypeScript app to store, manage, and view links with a sleek, responsive interface. Features user authentication, add/edit/delete/search/filter links, with responsive design and dark/light theme.',
-      technologies: ['React', 'TypeScript', 'React Router', 'CSS'],
-      image: '/project-weather-app.png',
-      link: 'https://react-ts-task-2-links-vault.vercel.app/',
+        'A full-featured online store with product browsing, cart management, and checkout flow. Built with a modern React stack and deployed for a smooth shopping experience across devices.',
+      technologies: ['React', 'TypeScript', 'Vercel', 'Responsive UI'],
+      image: '/E-COMMERCE.png',
+      link: 'https://e-commerce-omega-beige.vercel.app/',
+      github: 'https://github.com/Musiki8213/e-commerce',
     },
     {
-      title: 'Restaurant Website',
+      title: 'TUT Chatbot',
       description:
-        'A responsive restaurant website featuring an elegant menu display, online ordering capabilities, and reservation system. Built with modern web technologies, it provides a seamless dining experience with smooth animations, mobile-friendly design, and intuitive navigation for browsing dishes and making reservations.',
-      technologies: [
-        'React Native',
-        'TypeScript',
-        'Tailwind CSS',
-        'Responsive Design',
-        'Modern UI/UX',
-        'Interactive Menu',
-      ],
-      image: '/restaurant.jpg',
-      link: 'https://github.com/Musiki8213/React-Native-Task-5---Restaurant-App.git',
+        'An AI-powered chatbot for Tshwane University of Technology students. Helps with campus-related questions through a conversational interface with a clean, accessible design.',
+      technologies: ['React', 'AI', 'Vercel', 'TypeScript'],
+      image: '/TUT.jpg',
+      link: 'https://thusa-tut-ai-chatbot.vercel.app/',
+      github: 'https://github.com/Andile45/Thusa---TUT-AI-Chatbot',
     },
     {
-      title: 'Weather App',
+      title: 'ClinicSync',
       description:
-        'A React + TypeScript web application that shows current weather and forecasts for any location. Features search by city, displays temperature/humidity/wind, responsive design, and dynamic UI with weather-based icons.',
-      technologies: ['React', 'TypeScript', 'CSS', 'OpenWeatherMap API'],
-      image: '/project-link-vault.png',
-      link: 'https://task4-weather-app.vercel.app/',
+        'A clinic management platform for scheduling, patient records, and day-to-day healthcare workflows. Designed for clarity and efficiency in a clinical setting.',
+      technologies: ['React', 'TypeScript', 'Healthcare', 'Vercel'],
+      image: '/ClinicSync.png',
+      link: 'https://clinic-sync-u4yx-7uipyal80-musikis-projects-3af67fec.vercel.app/',
+      github: 'https://github.com/Musiki8213/ClinicSync',
     },
     {
-      title: 'ShopMate — Shopping List App',
+      title: 'CMS',
       description:
-        'A responsive Shopping List App built with React + TypeScript, Redux Toolkit, Tailwind CSS, and JSON Server. Features user registration/login, create/edit/delete/search/sort lists, persistent data, and responsive design.',
-      technologies: ['React', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS'],
-      image: '/project-shopmate.png',
-      link: 'https://task-5-shopping-list-app-one.vercel.app/',
+        'A content management system for creating, editing, and publishing content with an intuitive admin interface and structured content workflows.',
+      technologies: ['React', 'TypeScript', 'CMS', 'Vercel'],
+      image: '/CMS.png',
+      link: 'https://satumo-cms.vercel.app/',
+      github: 'https://github.com/Musiki8213/Musiki-CMS',
     },
   ];
 
@@ -61,17 +58,17 @@ export const Projects = () => {
     <section
       id="projects"
       ref={ref}
-      className={`py-20 bg-[#ffffff] dark:bg-[#3a3a3a] text-[#000000] dark:text-[#e5e5e5] relative overflow-hidden ${
+      className={`py-20 bg-[#ffffff] dark:bg-[#000000] text-[#000000] dark:text-[#ffffff] relative overflow-hidden ${
         isVisible ? 'animate-fade-in-up' : 'opacity-0'
       }`}
     >
       {/* Subtle background decoration */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-[#3b82f6] dark:bg-[#3b82f6] rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-5 animate-float"></div>
-      <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#3b82f6] dark:bg-[#3b82f6] rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-5 animate-float" style={{ animationDelay: '3s' }}></div>
+      <div className="absolute top-0 right-0 w-64 h-64 bg-[#000000] dark:bg-[#000000] rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-5 animate-float"></div>
+      <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#000000] dark:bg-[#000000] rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-5 animate-float" style={{ animationDelay: '3s' }}></div>
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
           <span className="inline-flex items-center gap-3">
-            <svg className="w-8 h-8 md:w-10 md:h-10 text-[#3b82f6] dark:text-[#60a5fa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-8 h-8 md:w-10 md:h-10 text-[#000000] dark:text-[#ffffff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
             </svg>
             Projects
@@ -80,27 +77,21 @@ export const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => {
             const projectIcons = [
-              <svg key="link" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>,
-              <svg key="safety" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>,
-              <svg key="weather" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" /></svg>,
-              <svg key="shop" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+              <svg key="shop" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>,
+              <svg key="chat" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>,
+              <svg key="health" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>,
+              <svg key="cms" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
             ];
             return (
-              <a
-                key={index}
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
+              <div key={index} className="block">
                 <div
-                  className={`bg-[#ffffff] dark:bg-[#2a2a2a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border-2 border-transparent hover:border-[#3b82f6] dark:hover:border-[#60a5fa] hover:scale-[1.02] overflow-hidden ${
+                  className={`bg-[#ffffff] dark:bg-[#000000] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border-2 border-transparent hover:border-[#000000] dark:border dark:border-[#ffffff]/20 dark:hover:border-[#ffffff] hover:scale-[1.02] overflow-hidden ${
                     isVisible ? 'animate-fade-in-up' : 'opacity-0'
                   }`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {/* Project Preview Image */}
-                  <div className="relative w-full h-48 bg-gradient-to-br from-[#3b82f6] to-[#60a5fa] overflow-hidden">
+                  <div className="relative w-full h-48 bg-gradient-to-br from-[#000000] to-[#000000] dark:from-[#000000] dark:to-[#000000] overflow-hidden">
                     <img
                       src={project.image}
                       alt={`${project.title} preview`}
@@ -112,30 +103,28 @@ export const Projects = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <div className="absolute top-4 left-4">
-                      <div className="w-12 h-12 rounded-lg bg-[#3b82f6] dark:bg-[#60a5fa] flex items-center justify-center group-hover:scale-110 transition-all duration-300 text-[#ffffff] shadow-lg">
+                      <div className="w-12 h-12 rounded-lg bg-[#000000] dark:border dark:border-[#ffffff] flex items-center justify-center group-hover:scale-110 transition-all duration-300 text-[#ffffff] shadow-lg">
                         {projectIcons[index] || projectIcons[0]}
                       </div>
                     </div>
                   </div>
 
                   <div className="p-6">
-                    <h3 className="text-2xl font-semibold text-[#000000] dark:text-[#aaaaaa] group-hover:text-[#000000] dark:group-hover:text-[#e5e5e5] transition-colors mb-4">
+                    <h3 className="text-2xl font-semibold text-[#000000] dark:text-[#ffffff] group-hover:text-[#000000] dark:group-hover:text-[#ffffff] transition-colors mb-4">
                       {project.title}
                     </h3>
                     <div className="mb-4">
                       <p
-                        className={`text-[#333333] dark:text-[#cccccc] leading-relaxed ${
+                        className={`text-[#000000] dark:text-[#ffffff] leading-relaxed ${
                           expandedProjects.has(index) ? '' : 'line-clamp-2'
                         }`}
                       >
                         {project.description}
                       </p>
                       <button
-                        onClick={(e) => {
-                          e.preventDefault(); 
-                          toggleExpand(index);
-                        }}
-                        className="mt-2 text-[#3b82f6] dark:text-[#60a5fa] hover:text-[#2563eb] dark:hover:text-[#3b82f6] text-sm font-medium flex items-center gap-1 transition-colors"
+                        type="button"
+                        onClick={() => toggleExpand(index)}
+                        className="mt-2 text-[#000000] dark:text-[#ffffff] hover:text-[#1a1a1a] dark:hover:text-[#ffffff]/80 text-sm font-medium flex items-center gap-1 transition-colors"
                       >
                         {expandedProjects.has(index) ? (
                           <>
@@ -154,19 +143,43 @@ export const Projects = () => {
                         )}
                       </button>
                     </div>
-                    <div className="flex flex-nowrap gap-2 overflow-x-auto pb-2 scrollbar-hide">
+                    <div className="flex flex-nowrap gap-2 overflow-x-auto pb-4 scrollbar-hide">
                       {project.technologies.map((tech, i) => (
                         <span
                           key={i}
-                          className="px-3 py-1 bg-[#3b82f6] dark:bg-[#60a5fa] text-[#ffffff] rounded text-xs font-medium hover:scale-105 hover:shadow-sm transition-all duration-300 cursor-default whitespace-nowrap flex-shrink-0"
+                          className="px-3 py-1 bg-[#000000] dark:bg-transparent dark:border dark:border-[#ffffff] text-[#ffffff] rounded text-xs font-medium hover:scale-105 hover:shadow-sm transition-all duration-300 cursor-default whitespace-nowrap flex-shrink-0"
                         >
                           {tech}
                         </span>
                       ))}
                     </div>
+                    <div className="flex flex-wrap gap-3 pt-2 border-t border-[#000000]/10 dark:border-[#ffffff]/20">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-[#000000] dark:bg-[#ffffff] dark:text-[#000000] text-[#ffffff] rounded-md text-sm font-medium hover:opacity-90 transition-opacity"
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        Live Demo
+                      </a>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 border-2 border-[#000000] dark:border-[#ffffff] text-[#000000] dark:text-[#ffffff] rounded-md text-sm font-medium hover:bg-[#000000]/5 dark:hover:bg-[#ffffff]/10 transition-colors"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                        </svg>
+                        GitHub
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </a>
+              </div>
             );
           })}
         </div>
