@@ -34,7 +34,7 @@ You need to replace `YOUR_PORTFOLIO_URL` with your actual hosted portfolio URL i
    - Size: 1200x630 pixels
    - Name: `og-image.jpg`
    - Place in: `public/og-image.jpg`
-   - Should include your name "Musiki Sithomola" and "Portfolio" or "UI/UX Full Stack Developer"
+   - Should include your name "Musiki Sithomola" and "Portfolio" or "Fullstack Developer"
 
 3. **Deploy your changes** to your hosting platform
 
