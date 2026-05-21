@@ -6,21 +6,7 @@ import Cal, { getCalApi } from '@calcom/embed-react';
 const CAL_LINK = 'musiki-sithomola-akzuxi/portfolio-call';
 const CAL_NAMESPACE = 'portfolio-call';
 
-type CalBookingEmbedProps = {
-  date: Date;
-  time: string;
-};
-
-function formatDateYmd(date: Date) {
-  const y = date.getFullYear();
-  const m = String(date.getMonth() + 1).padStart(2, '0');
-  const d = String(date.getDate()).padStart(2, '0');
-  return `${y}-${m}-${d}`;
-}
-
-export function CalBookingEmbed({ date, time }: CalBookingEmbedProps) {
-  const dateYmd = formatDateYmd(date);
-
+export function CalBookingEmbed() {
   useEffect(() => {
     (async () => {
       const cal = await getCalApi({
@@ -36,16 +22,14 @@ export function CalBookingEmbed({ date, time }: CalBookingEmbedProps) {
 
   return (
     <Cal
-      key={`${dateYmd}-${time}`}
       namespace={CAL_NAMESPACE}
       calOrigin="https://cal.com"
       embedJsUrl="https://cal.com/embed/embed.js"
       calLink={CAL_LINK}
       config={{
         layout: 'column_view',
-        date: dateYmd,
       }}
-      className="min-h-[360px] w-full overflow-auto sm:min-h-[480px]"
+      className="min-h-[420px] w-full overflow-auto sm:min-h-[520px]"
       style={{ width: '100%' }}
     />
   );
