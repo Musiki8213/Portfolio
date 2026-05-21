@@ -10,10 +10,10 @@ Add these meta tags to your `index.html` file in the `<head>` section:
 
 ```html
 <!-- Primary Meta Tags -->
-<title>Musiki Sithomola - UI/UX Full Stack Developer Portfolio</title>
-<meta name="title" content="Musiki Sithomola - UI/UX Full Stack Developer Portfolio">
-<meta name="description" content="Portfolio of Musiki Sithomola, UI/UX Full Stack Developer at mlab. Showcasing React, TypeScript, and Tailwind CSS projects including Link Vault, SafeMzansi, Weather App, and ShopMate.">
-<meta name="keywords" content="Musiki Sithomola, portfolio, UI/UX Developer, Full Stack Developer, React, TypeScript, Tailwind CSS, web developer, frontend developer, Musiki Sithomola portfolio, mlab developer">
+<title>Musiki Sithomola - Fullstack Developer Portfolio</title>
+<meta name="title" content="Musiki Sithomola - Fullstack Developer Portfolio">
+<meta name="description" content="Portfolio of Musiki Sithomola, Fullstack Developer at mlab. Showcasing React, TypeScript, and Tailwind CSS projects including Link Vault, SafeMzansi, Weather App, and ShopMate.">
+<meta name="keywords" content="Musiki Sithomola, portfolio, Fullstack Developer, React, TypeScript, Tailwind CSS, web developer, frontend developer, Musiki Sithomola portfolio, mlab developer">
 <meta name="author" content="Musiki Sithomola">
 <meta name="robots" content="index, follow">
 <meta name="language" content="English">
@@ -25,8 +25,8 @@ Add these meta tags to your `index.html` file in the `<head>` section:
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://your-portfolio-url.com/">
-<meta property="og:title" content="Musiki Sithomola - UI/UX Full Stack Developer Portfolio">
-<meta property="og:description" content="Portfolio of Musiki Sithomola, UI/UX Full Stack Developer at mlab. Showcasing React, TypeScript, and Tailwind CSS projects.">
+<meta property="og:title" content="Musiki Sithomola - Fullstack Developer Portfolio">
+<meta property="og:description" content="Portfolio of Musiki Sithomola, Fullstack Developer at mlab. Showcasing React, TypeScript, and Tailwind CSS projects.">
 <meta property="og:image" content="https://your-portfolio-url.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -35,8 +35,8 @@ Add these meta tags to your `index.html` file in the `<head>` section:
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://your-portfolio-url.com/">
-<meta name="twitter:title" content="Musiki Sithomola - UI/UX Full Stack Developer Portfolio">
-<meta name="twitter:description" content="Portfolio of Musiki Sithomola, UI/UX Full Stack Developer at mlab. Showcasing React, TypeScript, and Tailwind CSS projects.">
+<meta name="twitter:title" content="Musiki Sithomola - Fullstack Developer Portfolio">
+<meta name="twitter:description" content="Portfolio of Musiki Sithomola, Fullstack Developer at mlab. Showcasing React, TypeScript, and Tailwind CSS projects.">
 <meta name="twitter:image" content="https://your-portfolio-url.com/og-image.jpg">
 <meta name="twitter:image:alt" content="Musiki Sithomola - Portfolio Preview">
 
@@ -59,7 +59,7 @@ Add this structured data script to your `<head>` section to help Google understa
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Musiki Sithomola",
-  "jobTitle": "UI/UX Full Stack Developer",
+  "jobTitle": "Fullstack Developer",
   "worksFor": {
     "@type": "Organization",
     "name": "mlab"
@@ -81,8 +81,8 @@ Add this structured data script to your `<head>` section to help Google understa
     "React",
     "TypeScript",
     "Tailwind CSS",
-    "UI/UX Design",
-    "Full Stack Development",
+    "Fullstack Development",
+    "Web Development",
     "Web Development"
   ]
 }
@@ -138,7 +138,7 @@ You'll need to create an Open Graph image (og-image.jpg) for social media previe
 - Dimensions: 1200x630 pixels (recommended)
 - Format: JPG or PNG
 - File size: Under 1MB
-- Content: Should include your name "Musiki Sithomola" and "Portfolio" or "UI/UX Full Stack Developer"
+- Content: Should include your name "Musiki Sithomola" and "Portfolio" or "Fullstack Developer"
 
 **Place the image in:** `public/og-image.jpg`
 
