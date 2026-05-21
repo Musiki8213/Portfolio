@@ -45,7 +45,8 @@ export function CalBookingEmbed({ date, time }: CalBookingEmbedProps) {
         layout: 'column_view',
         date: dateYmd,
       }}
-      style={{ width: '100%', minHeight: 480, overflow: 'auto' }}
+      className="min-h-[360px] w-full overflow-auto sm:min-h-[480px]"
+      style={{ width: '100%' }}
     />
   );
 }

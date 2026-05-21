@@ -8,7 +8,7 @@ import { SectionHeader } from '@/components/section-header';
 
 export function AboutSection() {
   return (
-    <section id="about" className="relative px-6 py-28 md:py-36">
+    <section id="about" className="relative px-4 py-20 sm:px-6 sm:py-28 md:py-36">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
           label="About"
@@ -25,10 +25,10 @@ export function AboutSection() {
         >
           <motion.div
             variants={fadeUp}
-            className="space-y-6 rounded-3xl border border-black/8 bg-zinc-50/50 p-8 md:p-10"
+            className="space-y-5 rounded-3xl border border-black/8 bg-zinc-50/50 p-6 sm:space-y-6 sm:p-8 md:p-10"
           >
             {about.paragraphs.map((p) => (
-              <p key={p} className="text-lg leading-relaxed text-zinc-700">
+              <p key={p} className="text-base leading-relaxed text-zinc-700 sm:text-lg">
                 {p}
               </p>
             ))}
@@ -37,9 +37,9 @@ export function AboutSection() {
           <motion.div
             variants={fadeUp}
             custom={1}
-            className="rounded-3xl border border-black/8 bg-white p-8 shadow-premium md:p-10"
+            className="rounded-3xl border border-black/8 bg-white p-6 shadow-premium sm:p-8 md:p-10"
           >
-            <h3 className="font-display text-2xl font-semibold tracking-tight text-black">
+            <h3 className="font-display text-xl font-semibold tracking-tight text-black sm:text-2xl">
               What I do
             </h3>
             <ul className="mt-8 space-y-5">

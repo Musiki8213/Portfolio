@@ -28,7 +28,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="min-h-screen font-sans antialiased"
+        className="min-h-screen overflow-x-hidden font-sans antialiased"
         style={{ ['--font-clash' as string]: '"Satoshi", var(--font-geist-sans), sans-serif' }}
       >
         {children}

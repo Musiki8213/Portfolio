@@ -12,7 +12,7 @@ import { Badge } from '@/components/ui/badge';
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="relative border-y border-black/6 bg-zinc-50/40 px-6 py-28 md:py-36">
+    <section id="projects" className="relative border-y border-black/6 bg-zinc-50/40 px-4 py-20 sm:px-6 sm:py-28 md:py-36">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
           label="Featured work"
@@ -46,7 +46,7 @@ export function ProjectsSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
                 </div>
 
-                <div className="flex flex-col justify-center p-8 md:p-12">
+                <div className="flex flex-col justify-center p-6 sm:p-8 md:p-12">
                   <div className="flex flex-wrap gap-6 text-sm text-zinc-500">
                     <div>
                       <p className="text-xs uppercase tracking-widest">Reach</p>
@@ -62,10 +62,12 @@ export function ProjectsSection() {
                     </div>
                   </div>
 
-                  <h3 className="mt-8 font-display text-3xl font-semibold tracking-tight text-black md:text-4xl">
+                  <h3 className="mt-6 font-display text-2xl font-semibold tracking-tight text-black sm:mt-8 sm:text-3xl md:text-4xl">
                     {project.title}
                   </h3>
-                  <p className="mt-4 text-lg leading-relaxed text-zinc-600">{project.description}</p>
+                  <p className="mt-3 text-base leading-relaxed text-zinc-600 sm:mt-4 sm:text-lg">
+                    {project.description}
+                  </p>
 
                   <div className="mt-6 flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
@@ -73,14 +75,14 @@ export function ProjectsSection() {
                     ))}
                   </div>
 
-                  <div className="mt-8 flex flex-wrap gap-3">
-                    <Button asChild>
+                  <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap">
+                    <Button asChild className="w-full sm:w-auto">
                       <Link href={project.link} target="_blank" rel="noopener noreferrer">
                         Live demo
                         <ArrowUpRight size={16} />
                       </Link>
                     </Button>
-                    <Button variant="outline" asChild>
+                    <Button variant="outline" asChild className="w-full sm:w-auto">
                       <Link href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github size={16} />
                         GitHub

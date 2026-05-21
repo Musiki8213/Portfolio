@@ -3,10 +3,10 @@ import { site } from '@/lib/data';
 
 export function Footer() {
   return (
-    <footer className="border-t border-black/8 bg-white px-6 py-16">
+    <footer className="border-t border-black/8 bg-white px-4 py-12 sm:px-6 sm:py-16">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="font-display text-3xl font-semibold tracking-tight text-black">
+          <p className="font-display text-2xl font-semibold tracking-tight text-black sm:text-3xl">
             {site.name}
           </p>
           <p className="mt-2 text-sm text-zinc-500">{site.role} · {site.location}</p>

@@ -13,7 +13,7 @@ const CalBookingEmbed = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="flex h-[480px] items-center justify-center rounded-xl border border-black/10 bg-white text-sm text-zinc-500">
+      <div className="flex h-[360px] items-center justify-center rounded-xl border border-black/10 bg-white text-sm text-zinc-500 sm:h-[480px]">
         Loading Cal.com…
       </div>
     ),

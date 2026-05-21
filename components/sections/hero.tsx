@@ -29,16 +29,19 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden pt-28 pb-20">
+    <section
+      id="home"
+      className="relative overflow-hidden pt-24 pb-14 sm:min-h-[85vh] sm:pt-28 sm:pb-20 lg:min-h-screen lg:pb-20"
+    >
       <div className="pointer-events-none absolute inset-0 grid-fade" />
 
-      <div className="relative mx-auto max-w-6xl px-6">
-        <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-10 xl:gap-14">
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-10 xl:gap-14">
           <motion.div
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
-            className="min-w-0 space-y-8 lg:pr-6 xl:pr-10"
+            className="min-w-0 space-y-6 sm:space-y-8 lg:pr-6 xl:pr-10"
           >
             <motion.div variants={fadeUp} custom={0}>
               <Badge className="gap-2 pl-2">
@@ -52,7 +55,7 @@ export function HeroSection() {
             <motion.h1
               variants={fadeUp}
               custom={1}
-              className="max-w-none font-display text-[clamp(2.5rem,4.8vw,5.5rem)] font-semibold leading-[0.92] tracking-[-0.04em] text-black"
+              className="max-w-none font-display text-[clamp(2.25rem,9vw,5.5rem)] font-semibold leading-[0.94] tracking-[-0.04em] text-black sm:leading-[0.92] lg:text-[clamp(2.5rem,4.8vw,5.5rem)]"
             >
               {hero.headline.map((line, i) => (
                 <span key={line} className="block">
@@ -68,19 +71,23 @@ export function HeroSection() {
             <motion.p
               variants={fadeUp}
               custom={2}
-              className="max-w-none text-pretty text-lg leading-relaxed text-zinc-600 md:text-xl"
+              className="max-w-none text-pretty text-base leading-relaxed text-zinc-600 sm:text-lg md:text-xl"
             >
               {hero.subheadline}
             </motion.p>
 
-            <motion.div variants={fadeUp} custom={3} className="flex flex-wrap items-center gap-4 pt-2">
-              <Button asChild size="lg">
+            <motion.div
+              variants={fadeUp}
+              custom={3}
+              className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4"
+            >
+              <Button asChild size="lg" className="w-full sm:w-auto">
                 <Link href="#contact">
                   Start a project
                   <ArrowUpRight size={16} />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
                 <a href={site.cvPath} onClick={handleDownloadCV}>
                   <Download size={16} />
                   Download CV
@@ -89,7 +96,7 @@ export function HeroSection() {
             </motion.div>
           </motion.div>
 
-          <div className="flex justify-center lg:justify-end lg:-mt-4 xl:-mt-6">
+          <div className="hidden lg:flex lg:justify-end lg:-mt-4 xl:-mt-6">
             <HeroPhone />
           </div>
         </div>
@@ -98,7 +105,7 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="mt-20 flex justify-center"
+          className="mt-12 flex justify-center sm:mt-16 lg:mt-20"
         >
           <Link
             href="#about"

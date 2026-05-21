@@ -13,7 +13,7 @@ import { GmailIcon } from '@/components/icons/gmail-icon';
 
 export function ContactSection() {
   return (
-    <section id="contact" className="relative px-6 py-28 md:py-36">
+    <section id="contact" className="relative px-4 py-20 sm:px-6 sm:py-28 md:py-36">
       <div className="pointer-events-none absolute inset-0 grid-fade opacity-40" />
       <div className="relative mx-auto max-w-6xl">
         <SectionHeader
@@ -32,9 +32,9 @@ export function ContactSection() {
         >
           <motion.div
             variants={fadeUp}
-            className="rounded-3xl border border-black/8 bg-white p-8 shadow-premium md:p-10"
+            className="rounded-3xl border border-black/8 bg-white p-6 shadow-premium sm:p-8 md:p-10"
           >
-            <h3 className="font-display text-2xl font-semibold tracking-tight text-black">
+            <h3 className="font-display text-xl font-semibold tracking-tight text-black sm:text-2xl">
               Contact channels
             </h3>
             <p className="mt-2 text-zinc-600">Reach out by phone, book a call, Gmail, or WhatsApp.</p>
@@ -100,9 +100,9 @@ export function ContactSection() {
           <motion.div
             variants={fadeUp}
             custom={1}
-            className="rounded-3xl border border-black/8 bg-zinc-50/50 p-8 md:p-10"
+            className="rounded-3xl border border-black/8 bg-zinc-50/50 p-6 sm:p-8 md:p-10"
           >
-            <h3 className="font-display text-2xl font-semibold tracking-tight text-black">
+            <h3 className="font-display text-xl font-semibold tracking-tight text-black sm:text-2xl">
               Project enquiry
             </h3>
             <p className="mt-2 text-zinc-600">

@@ -8,7 +8,7 @@ import { SectionHeader } from '@/components/section-header';
 
 export function TestimonialsSection() {
   return (
-    <section id="testimonials" className="relative border-y border-black/6 bg-zinc-50/40 px-6 py-28 md:py-36">
+    <section id="testimonials" className="relative border-y border-black/6 bg-zinc-50/40 px-4 py-20 sm:px-6 sm:py-28 md:py-36">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
           label="Testimonials"
@@ -28,10 +28,10 @@ export function TestimonialsSection() {
               key={item.author}
               variants={fadeUp}
               custom={index}
-              className="flex flex-col rounded-3xl border border-black/8 bg-white p-8 shadow-premium"
+              className="flex flex-col rounded-3xl border border-black/8 bg-white p-6 shadow-premium sm:p-8"
             >
-              <Quote className="text-zinc-300" size={28} />
-              <p className="mt-6 flex-1 text-lg leading-relaxed text-zinc-700">
+              <Quote className="text-zinc-300" size={24} />
+              <p className="mt-5 flex-1 text-base leading-relaxed text-zinc-700 sm:mt-6 sm:text-lg">
                 &ldquo;{item.quote}&rdquo;
               </p>
               <footer className="mt-8 border-t border-black/6 pt-6">
