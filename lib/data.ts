@@ -114,6 +114,16 @@ export const experiences = [
 
 export const projects = [
   {
+    title: 'Mabotja Thabo Attorneys',
+    description:
+      'A professional law firm website for Mabotja Thabo Attorneys Inc. in Polokwane. Multi-page site covering ten practice areas, consultation booking, and a legal enquiry form — serving clients in person and remotely.',
+    technologies: ['Next.js', 'TypeScript', 'Vercel', 'Responsive UI'],
+    image: '/Mabotja-Attorneys.png',
+    link: 'https://mabotja-attorneys.vercel.app/',
+    github: 'https://github.com/Andile45/mabotja-attorneys',
+    metrics: { users: '3k+', uptime: '99.9%', pages: '14' },
+  },
+  {
     title: 'E-Commerce',
     description:
       'A full-featured online store with product browsing, cart management, and checkout flow. Built with a modern React stack and deployed for a smooth shopping experience across devices.',

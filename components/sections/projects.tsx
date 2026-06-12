@@ -34,16 +34,15 @@ export function ProjectsSection() {
               custom={index}
               className="group overflow-hidden rounded-3xl border border-black/8 bg-white shadow-premium-lg transition-transform duration-500 hover:-translate-y-1"
             >
-              <div className={`grid lg:grid-cols-2 ${index % 2 === 1 ? 'lg:[&>*:first-child]:order-2' : ''}`}>
-                <div className="relative h-44 overflow-hidden bg-zinc-100 sm:h-48 lg:h-52">
+              <div className={`grid lg:grid-cols-2 lg:items-stretch ${index % 2 === 1 ? 'lg:[&>*:first-child]:order-2' : ''}`}>
+                <div className="relative h-72 overflow-hidden bg-zinc-100 p-3 sm:h-80 sm:p-4 md:h-96 lg:min-h-[28rem] lg:h-full">
                   <Image
                     src={project.image}
                     alt={`${project.title} preview`}
                     fill
-                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
-                    sizes="(max-width: 1024px) 100vw, 420px"
+                    className="object-contain object-top"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
                 </div>
 
                 <div className="flex flex-col justify-center p-6 sm:p-8 md:p-12">
