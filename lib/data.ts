@@ -139,8 +139,8 @@ export const projects = [
       'An AI-powered chatbot for Tshwane University of Technology students. Helps with campus-related questions through a conversational interface with a clean, accessible design.',
     technologies: ['React', 'AI', 'Vercel', 'TypeScript'],
     image: '/TUT.jpg',
-    link: 'https://thusa-tut-ai-chatbot.vercel.app/',
-    github: 'https://github.com/Andile45/Thusa---TUT-AI-Chatbot',
+    link: 'https://thusa-tut-ai-chatbot-jwn4klcai-musikis-projects-3af67fec.vercel.app',
+    github: 'https://github.com/Musiki8213/Thusa---TUT-AI-Chatbot.git',
     metrics: { users: '1.8k+', uptime: '99.5%', pages: '8' },
   },
   {
