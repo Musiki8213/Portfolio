@@ -57,7 +57,10 @@ export const skills: SkillItem[] = [
   { name: 'Tailwind CSS', years: '2 yrs', tag: 'STYLING', filter: 'core' },
   { name: 'Responsive Design', years: '2 yrs', tag: 'STYLING', filter: 'design' },
   { name: 'Node.js', years: '2 yrs', tag: 'BACKEND', filter: 'core' },
+  { name: 'Express.js', years: '2 yrs', tag: 'BACKEND', filter: 'core' },
   { name: 'RESTful APIs', years: '2 yrs', tag: 'API', filter: 'core' },
+  { name: 'MongoDB', years: '2 yrs', tag: 'DATABASE', filter: 'core' },
+  { name: 'NoSQL', years: '2 yrs', tag: 'DATABASE', filter: 'core' },
   { name: 'Database Design', years: '2 yrs', tag: 'DATA', filter: 'core' },
   { name: 'Server Architecture', years: '1 yr', tag: 'BACKEND', filter: 'infra' },
   { name: 'User Research', years: '2 yrs', tag: 'DESIGN', filter: 'design' },
@@ -77,27 +80,36 @@ export const skills: SkillItem[] = [
 
 export const about = {
   paragraphs: [
-    "I'm a motivated Fullstack Developer with hands-on industry exposure through mLab Codetribe Academy and a strong foundation in building real-world applications.",
-    'Computer Science diploma holder from Tshwane University of Technology (TUT) with practical experience in fullstack and mobile application development.',
+    "I'm a dedicated Fullstack Developer with production experience cultivated through mLab CodeTribe Academy, a nationally recognised, work-based programme I earned entry to through an intensive four-week technical bootcamp and panel evaluation.",
+    'Currently pursuing an Advanced Diploma in Computer Science at Tshwane University of Technology (TUT), building upon my Computer Science Diploma and a proven track record of shipping performant, accessible web and mobile solutions.',
   ],
   highlights: [
-    'Design intuitive user interfaces and experiences',
-    'Develop fullstack web applications',
-    'Create responsive and accessible designs',
-    'Optimize performance and user experience',
+    'Architect intuitive, high-fidelity user interfaces and design systems',
+    'Engineer end-to-end fullstack applications with Next.js, Node.js & Express.js',
+    'Design resilient data models and APIs with MongoDB, NoSQL, and SQL',
+    'Optimize web performance, SEO, and WCAG accessibility compliance',
   ],
 };
 
 export const experiences = [
   {
     title: 'Software Developer Trainee',
-    company: 'mLab Codetribe Academy',
+    company: 'mLab CodeTribe Academy',
     period: 'July 2025 — March 2026',
     description: [
-      'Designing and developing user-centric web applications',
-      'Collaborating with cross-functional teams to deliver high-quality products',
-      'Implementing responsive designs and ensuring optimal user experiences',
-      'Working with modern web technologies and frameworks',
+      'Selected for a nationally recognised, work-based digital skills programme via a competitive four-week intensive technical bootcamp and panel interview',
+      'Architected and deployed fullstack web and mobile applications using React, React Native, Node.js, Express.js, and MongoDB',
+      'Collaborated within agile engineering squads to build secure RESTful APIs, scalable database schemas, and robust state machines',
+      'Authored component systems adhering to minimalist design standards, glassmorphic UI patterns, and strict accessibility benchmarks',
+    ],
+  },
+  {
+    title: 'Advanced Diploma in Computer Science',
+    company: 'Tshwane University of Technology (TUT)',
+    period: '2026 — Present',
+    description: [
+      'Postgraduate specialization in advanced software engineering, distributed systems, and architectural patterns',
+      'Deepened competencies in system modeling, enterprise cloud architectures, and algorithmic optimization',
     ],
   },
   {
@@ -105,9 +117,18 @@ export const experiences = [
     company: 'Tshwane University of Technology (TUT)',
     period: '2022 — 2025',
     description: [
-      'Foundation in software engineering, databases, and systems design',
-      'Practical projects in web and mobile application development',
-      'Focus on problem-solving and modern development practices',
+      'Comprehensive core in software engineering, object-oriented systems (Java), database engineering, and networking',
+      'Designed and engineered practical academic capstone applications across web and mobile platforms',
+      'Established disciplined problem-solving methodologies, version control protocols, and testing practices',
+    ],
+  },
+  {
+    title: 'National Senior Certificate',
+    company: 'Thase Secondary School',
+    period: 'Completed',
+    description: [
+      'Completed secondary education with Bachelor Degree endorsement',
+      'Strong academic foundation in mathematics, analytical reasoning, and physical sciences',
     ],
   },
 ];
@@ -116,7 +137,7 @@ export const projects = [
   {
     title: 'Mabotja Thabo Attorneys',
     description:
-      'A professional law firm website for Mabotja Thabo Attorneys Inc. in Polokwane. Multi-page site covering ten practice areas, consultation booking, and a legal enquiry form — serving clients in person and remotely.',
+      'A professional law firm website for Mabotja Thabo Attorneys Inc. in Polokwane. Multi-page site covering ten practice areas, consultation booking, and a legal enquiry form serving clients in person and remotely.',
     technologies: ['Next.js', 'TypeScript', 'Vercel', 'Responsive UI'],
     image: '/Mabotja-Attorneys.png',
     link: 'https://mabotja-attorneys.vercel.app/',
@@ -175,21 +196,15 @@ export const stats = [
 export const testimonials = [
   {
     quote:
-      'Musiki brings a rare balance of design sensibility and engineering discipline. Interfaces feel intentional, and delivery is consistently polished.',
-    author: 'Product Lead',
-    role: 'mLab Codetribe Academy',
+      'Musiki distinguishes himself through disciplined engineering and a sharp eye for interface precision. During his tenure at CodeTribe Academy, he consistently architected clean, maintainable systems and translated complex product requirements into intuitive, polished user experiences. His dedication to production quality and modern development standards makes him an exceptional asset to any engineering team.',
+    author: 'Mahlatse Serathi',
+    role: 'Skills Facilitator, mLab Southern Africa',
   },
   {
     quote:
-      'Clear communication, fast iteration, and thoughtful UX. The portfolio projects demonstrate real product thinking—not just visual flair.',
-    author: 'Engineering Mentor',
-    role: 'TUT Industry Programme',
-  },
-  {
-    quote:
-      'Every handoff was structured, accessible, and production-minded. A strong junior developer with senior-level attention to craft.',
-    author: 'Creative Director',
-    role: 'Freelance Client',
+      'Having mentored Musiki through our intensive work-based programme, I was consistently impressed by his proactive problem-solving, architectural rigor, and fullstack agility. Whether building responsive frontends with React and Next.js or structuring robust backend APIs with Node.js, Express, and MongoDB, he approaches every deliverable with senior-level craft and meticulous attention to detail.',
+    author: 'Frankie Mosehla',
+    role: 'Skills Facilitator, mLab Southern Africa',
   },
 ];
 
