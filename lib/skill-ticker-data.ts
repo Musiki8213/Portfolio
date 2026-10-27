@@ -30,6 +30,9 @@ export interface SkillTickerItem {
 /** Row 1 — scrolls left */
 export const skillTickerRow1: SkillTickerItem[] = [
   { name: 'Node.js', category: 'Runtime', iconSlug: 'nodedotjs' },
+  { name: 'Express.js', category: 'Backend', iconSlug: 'express' },
+  { name: 'MongoDB', category: 'Database', iconSlug: 'mongodb' },
+  { name: 'NoSQL', category: 'Database', Icon: Database },
   { name: 'Expo', category: 'Platform', iconSlug: 'expo' },
   { name: 'Supabase', category: 'BaaS', iconSlug: 'supabase' },
   { name: 'Firebase', category: 'BaaS', iconSlug: 'firebase' },
