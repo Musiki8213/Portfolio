@@ -17,7 +17,7 @@ export function ProjectsSection() {
         <SectionHeader
           label="Featured work"
           title="Selected projects with production polish."
-          description="Real applications spanning commerce, AI, healthcare, and content systems—each designed for clarity and scale."
+          description="Real applications spanning commerce, AI, healthcare, and content systems each designed for clarity and scale."
         />
 
         <motion.div
