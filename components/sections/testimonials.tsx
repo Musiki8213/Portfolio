@@ -12,7 +12,7 @@ export function TestimonialsSection() {
       <div className="mx-auto max-w-6xl">
         <SectionHeader
           label="Testimonials"
-          title="Trusted for clarity, craft, and follow-through."
+          title="Trusted for clarity, craft, and follow through."
           align="center"
         />
 
@@ -21,7 +21,7 @@ export function TestimonialsSection() {
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}
           variants={staggerContainer}
-          className="mt-16 grid gap-6 md:grid-cols-3"
+          className="mt-16 grid gap-8 md:grid-cols-2 max-w-5xl mx-auto"
         >
           {testimonials.map((item, index) => (
             <motion.blockquote
