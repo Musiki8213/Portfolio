@@ -12,7 +12,7 @@ export function ExperienceSection() {
         <SectionHeader
           label="Experience"
           title="A timeline of growth, craft, and delivery."
-          description="From academic foundations at TUT to hands-on product work at mLab Codetribe Academy—building interfaces and systems that ship."
+          description="From academic foundations at TUT to hands-on product work at mLab Codetribe Academy building interfaces and systems that ship."
         />
 
         <motion.div
