@@ -13,7 +13,7 @@ export function AboutSection() {
         <SectionHeader
           label="About"
           title="Craft-led engineering with product clarity."
-          description="I translate ideas into refined interfaces and dependable fullstack systems—always with accessibility, performance, and visual discipline."
+          description="I translate ideas into refined interfaces and dependable fullstack systems always with accessibility, performance, and visual discipline."
         />
 
         <motion.div
