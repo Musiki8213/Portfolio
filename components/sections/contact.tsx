@@ -19,7 +19,7 @@ export function ContactSection() {
         <SectionHeader
           label="Contact"
           title="Let's build something exceptional."
-          description="Share your vision—I'll respond with clarity, timelines, and a thoughtful path to launch."
+          description="Share your vision and I'll respond with clarity, timelines, and a thoughtful path to launch."
           align="center"
         />
 
@@ -106,7 +106,7 @@ export function ContactSection() {
               Project enquiry
             </h3>
             <p className="mt-2 text-zinc-600">
-              Leave your details below. No technical jargon required—just tell us what you need.
+              Leave your details below. No technical jargon required, just tell us what you need.
             </p>
             <div className="mt-8">
               <ProjectEnquiryForm />
