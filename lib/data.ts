@@ -93,6 +93,15 @@ export const about = {
 
 export const experiences = [
   {
+    title: 'Advanced Diploma in Computer Science',
+    company: 'Tshwane University of Technology (TUT)',
+    period: '2026 — Present',
+    description: [
+      'Postgraduate specialization in advanced software engineering, distributed systems, and architectural patterns',
+      'Deepened competencies in system modeling, enterprise cloud architectures, and algorithmic optimization',
+    ],
+  },
+  {
     title: 'Software Developer Trainee',
     company: 'mLab CodeTribe Academy',
     period: 'July 2025 — March 2026',
@@ -101,15 +110,6 @@ export const experiences = [
       'Architected and deployed fullstack web and mobile applications using React, React Native, Node.js, Express.js, and MongoDB',
       'Collaborated within agile engineering squads to build secure RESTful APIs, scalable database schemas, and robust state machines',
       'Authored component systems adhering to minimalist design standards, glassmorphic UI patterns, and strict accessibility benchmarks',
-    ],
-  },
-  {
-    title: 'Advanced Diploma in Computer Science',
-    company: 'Tshwane University of Technology (TUT)',
-    period: '2026 — Present',
-    description: [
-      'Postgraduate specialization in advanced software engineering, distributed systems, and architectural patterns',
-      'Deepened competencies in system modeling, enterprise cloud architectures, and algorithmic optimization',
     ],
   },
   {
