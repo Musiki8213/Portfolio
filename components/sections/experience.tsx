@@ -27,7 +27,7 @@ export function ExperienceSection() {
           <div className="space-y-10">
             {experiences.map((exp, index) => (
               <motion.article
-                key={exp.company}
+                key={`${exp.company}-${exp.title}`}
                 variants={fadeUp}
                 custom={index}
                 className="relative md:pl-20"
