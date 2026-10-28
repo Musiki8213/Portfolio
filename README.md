@@ -306,7 +306,7 @@ I am actively seeking fullstack engineering roles, collaborative technical proje
 | **WhatsApp** | [Chat on WhatsApp](https://wa.me/27677159301?text=Hi%20Musiki%2C%20I%20want%20to%20discuss%20a%20project.) | Rapid messaging & project exploration |
 | **Calendar** | [cal.com/musiki-sithomola-akzuxi](https://cal.com/musiki-sithomola-akzuxi/portfolio-call) | Schedule a 30-minute discovery call |
 | **GitHub** | [github.com/Musiki8213](https://github.com/Musiki8213) | Code repositories, OSS contributions, commit history |
-| **Location** | Gauteng / Polokwane, South Africa | Available for on-site, hybrid, or remote globally |
+| **Location** | Polokwane, South Africa | Available for on-site, hybrid, or remote globally |
 
 ---
 
